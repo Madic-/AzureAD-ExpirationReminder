@@ -1,7 +1,5 @@
 # AzureAD Expiration Reminder Script
 
-## Overview
-
 This PowerShell script automates the process of checking for Azure Active Directory (AzureAD) SAML and AzureAD applications whose secrets or certificates are about to expire. It aims to provide an advanced reminder, set by default to 60 days before the expiration date, by sending an email notification containing the details of the expiring entries.
 
 ### Example Output
