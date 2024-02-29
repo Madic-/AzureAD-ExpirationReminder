@@ -1,4 +1,4 @@
-# AzureAD Expiration Reminder Script
+# AzureAD Expiration Reminder Script [![Maintenance](https://img.shields.io/maintenance/yes/2024.svg)]()  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This PowerShell script automates the process of checking for Azure Active Directory (AzureAD) SAML and AzureAD applications whose secrets or certificates are about to expire. It aims to provide an advanced reminder, set by default to 60 days before the expiration date, by sending an email notification containing the details of the expiring entries.
 
@@ -30,13 +30,13 @@ Install-Module -Name AzureAD
 
 ## Configuration
 
-Before running the script, some variables need to be customized to fit your environment. This includes SMTP configurations for sending emails, as well as the option to authenticate with AzureAD using a certificate for enhanced security.
+Before running the script, some variables need to be customized to fit your environment. This includes SMTP configurations for sending emails, as well as the option to authenticate with AzureAD using a certificate for enhanced security (WIP).
 
 ### Mandatory Adjustments
 
 1. **SMTP Settings**: The script uses SMTP to send out email notifications. You must provide valid SMTP server details that the script will use to send these emails.
 
-2. **AzureAD Connection (optional / to be done)**: By default, the script connects to AzureAD using an interactive login. For automated scenarios, such as running the script as a scheduled task, certificate-based authentication can instead be used. This requires uncommenting and configuring the relevant section with your AzureAD tenant ID, application ID, and certificate thumbprint.
+2. **AzureAD Connection (optional / WIP)**: By default, the script connects to AzureAD using an interactive login. For automated scenarios, such as running the script as a scheduled task, certificate-based authentication can instead be used. This requires uncommenting and configuring the relevant section with your AzureAD tenant ID, application ID, and certificate thumbprint.
 
 ### Variables Explanation
 
